@@ -1,0 +1,131 @@
+* {
+  margin: 0; /* Reset margins for all elements */
+}
+
+/* General Styles */
+body {
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #cfecf7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000; /* Adjusted color to black */
+}
+
+/* Blur Effect on App Background */
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  z-index: 999; /* Place it below the modal */
+}
+
+/* Typography */
+h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  color: #03f648;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #000;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  padding: 12px;
+  background-color: #8f6b32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px auto;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s; /* Added transform for hover */
+}
+
+.btn:hover {
+  background-color: #a55130;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Disclaimer Modal Styles */
+.disclaimer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is on top */
+}
+
+.disclaimer-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  color: #000;
+  width: 70%;
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Other styles remain unchanged */
+    
