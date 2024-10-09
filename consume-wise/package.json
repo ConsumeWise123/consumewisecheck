@@ -1,9 +1,9 @@
 {
   "name": "consume-wise",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
+    "start": "vite preview --port 80",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
